@@ -1,22 +1,31 @@
+/*Сводка что нужно сделать 
+1-Создаем и вводим N 
+2-Создаем условие если ввод ошибочный то вывод ошибки 
+3-Создает новое условие N в диапазоне 1 до 10*
+и в нем же создаем массив римских цифр с 0 "" 
+и выводом элемента массива по индексу N
+4-условие елсе не верный выбор на всякий случай*/
 #include <iostream>
-#include <string>
+#include <string> 
+
+using namespace std;
 
 int main() {
+
     int N;
-    std::cin >> N;
+    cin >> N;
 
-    if (std::cin.fail()) {
-        std::cerr << "Введено неожиданное число" << std::endl;
-        return 1;
+    if (cin.fail()){
+        cout << "Введено неожиданное число";
     }
 
-    if (N >= 1 && N <= 10) {
-        const std::string romanNumerals[] = {"", "I", "II", "III", "IV", "V",
-                                             "VI", "VII", "VIII", "IX", "X"};
-        std::cout << romanNumerals[N] << std::endl;
-    } else {
-        std::cerr << "Введено неожиданное число" << std::endl;
+    if (N >= 1 && N <= 10){ 
+        const string Roman_numerals [] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
+
+        cout << Roman_numerals [N];
     }
-//переделать нахуй
-    return 0;
+    else{
+        cout << "Введено неожиданное число";
+    }
+
 }
