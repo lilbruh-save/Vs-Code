@@ -3,12 +3,8 @@
 #include <iostream>
 #include <string>
 
-std::string PrintCenter (std::string word, int fillCount){
-  char fillChar = '=';
-  std::string purefix(fillChar, fillCount);
-  std::string suffix (fillChar, fillCount);
-
-  return purefix + word + suffix;
+void PrintCenter(std::string str){
+    
 }
 
 int main() {
