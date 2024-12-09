@@ -26,7 +26,7 @@ int main()
 {
   int num_ducks;
   std::cin >> num_ducks;
-
+  
   std::vector<Duck> ducks(num_ducks);
 
   for (int i = 0; i < num_ducks; ++i) {
