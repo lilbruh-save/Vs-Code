@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std::literals;
-
+//IDEA
 bool TVControl::ReadAndApplyCommand(TV& tv) {
     std::string action;
 
@@ -27,7 +27,7 @@ bool TVControl::ReadAndApplyCommand(TV& tv) {
     std::cout << "Unknown command"s << std::endl;
     return false;
 }
-
+//IDEA
 void TVControl::Info(TV& tv) {
     if (!tv.IsTurnedOn()) {
         std::cout << "TV is turned off"s << std::endl;
