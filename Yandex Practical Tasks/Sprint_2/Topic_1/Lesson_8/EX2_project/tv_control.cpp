@@ -20,7 +20,10 @@ bool TVControl::ReadAndApplyCommand(TV& tv) {
     if (action == "Exit"s) {
         return false;
     }
-    
+    if (action == "TurnOn"){
+        tv.TurnOn();
+        std::cout << "Turning on";
+    }
     // Реализуйте обработку остальных команд.
     // ......................................
 
