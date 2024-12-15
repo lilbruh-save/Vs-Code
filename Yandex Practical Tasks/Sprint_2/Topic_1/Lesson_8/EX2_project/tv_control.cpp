@@ -20,12 +20,15 @@ bool TVControl::ReadAndApplyCommand(TV& tv) {
     if (action == "Exit"s) {
         return false;
     }
-    
+    if (action == "TurnOn"){
+        
+    }
     // Реализуйте обработку остальных команд.
     // ......................................
-
+    else {
     std::cout << "Unknown command"s << std::endl;
     return false;
+    }
 }
 //IDEA
 void TVControl::Info(TV& tv) {
