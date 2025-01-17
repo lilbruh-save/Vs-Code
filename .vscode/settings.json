@@ -58,5 +58,6 @@
     "xtree": "cpp",
     "cassert": "cpp"
   },
-  "C_Cpp.errorSquiggles": "Enabled"
+  "C_Cpp.errorSquiggles": "Enabled",
+  "code-runner.runInTerminal": true,
 }
