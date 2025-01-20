@@ -6,28 +6,23 @@
 Если число не делится ни на 3, ни на 5, выводится само число.*/
 
 #include <iostream>
-#include <locale>
+#include <locale> 
 
-int main() {
-    std::setlocale(LC_ALL, "ru_RU.UTF-8");
+int main(){
+    setlocale(LC_ALL, "ru_RU.UTF-8");
 
-  int number;
-
-  // Считываем число
-  std::cout << "Ведите число ";
-  std::cin >> number;
-
-  for (int i=1; i <= number; i++){
+  //Рабочий цикл
+  for (int i=1; i <= 100; i++){
     if (i % 15 == 0){
-      std::cout << "FizzBuzz" << std::endl;
+      std::cout << "FizzBuzz\n";
     }
-    else if (i % 3 == 0){
-      std::cout << "Fizz" << std::endl;
+    else  if (i % 3 == 0){
+      std::cout << "Fizz\n";
+    }
+    else if (i % 5 == 0){
+      std::cout << "Buzz\n";
+    }
+    else { std::cout << i << "\n"; }
   }
-  else if (i % 5 == 0){
-      std::cout << "Buzz" << std::endl;
-  }
-  else {std::cout << i << std::endl;}
-   
-  }
+  return 0;
 }
